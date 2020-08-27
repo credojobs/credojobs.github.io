@@ -32,12 +32,36 @@ a {
   text-align: center;
   margin-top: -20px;
   padding: 0 35px;
+
+  @media screen and (max-width: 950px) {
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  @media screen and (max-width: 780px) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 25px;
+    line-height: 35px;
+    width: 290px;
+    margin-top: -40px;
+  }
 }
 
 .hero__tagline {
   color: #fff;
   font-size: 18px;
   opacity: 0.9;
+  text-align: center;
+
+  @media screen and (max-width: 600px) {
+    width: 300px;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .left {
@@ -50,13 +74,30 @@ a {
     font-family: 'Playfair Display', serif;
     font-weight: 900;
     font-size: 24px;
+
+    @media screen and (max-width: 700px) {
+      font-size: 19px;
+    }
+
     span {
       font-size: 23px;
       font-weight: 700;
       color: #fff;
       padding-left: 7px;
+
+      @media screen and (max-width: 700px) {
+        font-size: 17px;
+        padding-left: 4px;
+
+      }
+
     }
   }
+
+  @media screen and (max-width: 700px) {
+    left: 15px;
+  }
+
 }
 
 .right {
@@ -72,11 +113,20 @@ a {
     cursor: pointer;
     font-weight: 600;
 
+    @media screen and (max-width: 700px) {
+      padding: 7px 10px;
+    }
+
     &:hover,
     &:active {
       background: darken(#0091FF, 8%);
     }
   }
+
+  @media screen and (max-width: 700px) {
+    right: 15px;
+  }
+
 }
 
 main {
@@ -106,10 +156,23 @@ main {
   margin: 0 auto;
   justify-content: space-between;
 
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(201,201,201,0.32);
+  }
+
+  @media screen and (max-width: 690px) {
+    padding: 15px 10px;
+  }
+
 }
 .logo svg {
   width: 75px;
   height: 75px;
+
+  @media screen and (max-width: 690px) {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .job-info {
@@ -118,6 +181,10 @@ main {
   justify-content: center;
   padding-left: 15px;
   flex: 1;
+
+  @media screen and (max-width: 690px) {
+    padding-left: 10px;
+  }
 }
 
 .job-title {
@@ -126,11 +193,21 @@ main {
   font-size: 20px;
   margin-bottom: 15px;
   margin-top: -5px;
+
+  @media screen and (max-width: 690px) {
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
 }
 
 .job-tagline {
   font-weight: 600;
   color: lighten(#000, 30%);
+
+  @media screen and (max-width: 690px) {
+    font-size: 14px;
+  }
 }
 
 .job-details {
@@ -138,6 +215,10 @@ main {
   flex-direction: column;
   justify-content: center;
   text-align: right;
+
+  @media screen and (max-width: 690px) {
+    display: none;
+  }
 }
 
 .job-location {
