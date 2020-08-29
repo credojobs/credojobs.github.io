@@ -249,16 +249,15 @@ footer {
 
 .footer-msg {
   @media screen and (max-width: 690px) {
-    width: 180px;
+    width: 80%;
     margin: 0 auto;
+  }
+  div {
+    margin-bottom: 14px;
   }
 }
 
 .footer-msg a {
   color: darken(#0091FF, 10%);
   text-decoration: underline;
-  @media screen and (max-width: 690px) {
-    margin-top: 10px;
-    display: block;
-  }
 }
